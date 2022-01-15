@@ -44,6 +44,6 @@ chrome.storage.sync.get(['freeLeft', 'uid', 'isBought'], function (result) {
                 console.log(err)
             });
         });
-        chrome.runtime.reload()
+        // chrome.runtime.reload()
     }
 });
