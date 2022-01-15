@@ -39,11 +39,11 @@ chrome.storage.sync.get(['freeLeft', 'uid', 'isBought'], function (result) {
                         console.log('Uid '+result.uid+' not Bought');
                     })
                 }
+                chrome.runtime.reload()
             })
             .catch((err) => {
                 console.log(err)
             });
         });
-        // chrome.runtime.reload()
     }
 });
