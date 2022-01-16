@@ -1253,16 +1253,6 @@ function loaded() {
 }
 
 // searches for captcha image after div modification.
-if (document.URL.match("vtop.vit.ac.in")) {
-  $('div#page_outline:first').on('DOMSubtreeModified', function () {
-    try {
-      loaded();
-    } catch (e) {
-      console.log(e);
-    }
-  });
-}
-
 if (document.URL.match("vconnect.vit.ac.in")){
   var a = document.getElementById("captchaRefresh");
   if (a!==null){
@@ -1274,6 +1264,15 @@ if (document.URL.match("vconnect.vit.ac.in")){
       loaded();
     } catch (e) {
       console.log(e)
+    }
+  });
+
+} else if (document.URL.match(".vit.ac.in")) {
+  $('div#page_outline:first').on('DOMSubtreeModified', function () {
+    try {
+      loaded();
+    } catch (e) {
+      console.log(e);
     }
   });
 }
