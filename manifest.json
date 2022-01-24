@@ -1,7 +1,7 @@
 {
     "name": "Vit Captcha Solver",
     "description": "Solves your Vtop Captchas for you!",
-    "version": "1.0.0.5",
+    "version": "1.0.0.6",
     "icons":{
         "48":"/icons/v4-48.png",
         "128":"/icons/v4-128.png"
