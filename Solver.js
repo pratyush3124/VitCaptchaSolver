@@ -1275,4 +1275,20 @@ if (document.URL.match("vconnect.vit.ac.in")){
       console.log(e);
     }
   });
+} else if (document.URL.match(".vitbhopal.ac.in")) {
+  $('div#page_outline:first').on('DOMSubtreeModified', function () {
+    try {
+      loaded();
+    } catch (e) {
+      console.log(e);
+    }
+  });
+} else if (document.URL.match(".vitap.ac.in")) {
+  $('div#page_outline:first').on('DOMSubtreeModified', function () {
+    try {
+      loaded();
+    } catch (e) {
+      console.log(e);
+    }
+  });
 }

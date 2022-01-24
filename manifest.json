@@ -15,11 +15,10 @@
     },
     "content_scripts": [
         {
-            "matches":["*://*.vit.ac.in/*"],
+            "matches":["*://*.vit.ac.in/*","*://*.vitbhopal.ac.in/*","*://*.vitap.ac.in/*"],
             "js": ["/static/jquery.js", "Solver.js"]
         }
     ],
-    "content_security_policy":{
-    },
+    "content_security_policy":{},
     "manifest_version": 3
 }
