@@ -14,7 +14,7 @@ chrome.runtime.onInstalled.addListener(function(details){
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            chrome.storage.sync.set({uid:data.newId, isBought:0, freeLeft:3}, function(){
+            chrome.storage.sync.set({uid:data.newId, isBought:0, freeLeft:5}, function(){
                 console.log('New uid set '+data.newId)
             })
         })
